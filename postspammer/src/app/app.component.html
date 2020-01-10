@@ -1,0 +1,15 @@
+<form>
+  <label>Cose inutili:</label>
+  <input type="text" name="inutile" #new_inutile>
+  <label>numero:</label>
+  <input type="number" name="numero" #new_number>
+  <button (click)="onClick(new_inutile, new_number)">schiacciami</button>
+
+  <ul>
+    <li *ngFor="let frase of articles">
+    {{frase}}
+    </li>
+  </ul>
+</form>
+
+
